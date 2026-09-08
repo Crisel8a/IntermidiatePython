@@ -39,3 +39,15 @@ from datetime import datetime
 date = datetime(2024, 12, 5, 10, 10)
 text = f"La fecha completa es {date: %A %d de %B de %Y a las %I:%M %p}"
 print(text)
+
+# porcentajes
+
+print(
+    f"raw: {(percentage := 0.8575)}\npercentage format: {percentage:.2%}"
+)  # raw: 0.8575, percentage format: 85.75%
+
+# notación científica
+
+print(
+    f"raw: {(number := 0.00012345)}\nScientific notation: {number:.3E}"
+)  # raw: 0.00012345, Scientific notation: 1.234E-04
